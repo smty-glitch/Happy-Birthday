@@ -9,7 +9,7 @@
 <body>
   <div class="container">
     <h1>🎉 Happy Birthday, Bagisha! 🎂</h1>
-    <p>Click the candles to blow them out and cut the cake!</p>
+    <p>Click the candles to blow them out and enjoy the celebration!</p>
     <div class="cake-container">
       <div class="candles">
         <div class="candle" onclick="blowCandle(this)"><div class="flame"></div></div>
@@ -22,10 +22,16 @@
       </div>
       <button class="cut-button" onclick="cutCake()">Cut the Cake 🍰</button>
     </div>
+    <button class="music-button" onclick="toggleMusic()">🔊 Mute/Unmute Music</button>
+    <div class="fireworks hidden" id="fireworks"></div>
     <div class="message hidden">
       <p>Dear Bagisha, wishing you a day filled with love, joy, and laughter! 💖</p>
     </div>
   </div>
+  <audio id="birthday-music" loop>
+    <source src="happy-birthday-song.mp3" type="audio/mpeg">
+  </audio>
   <script src="script.js"></script>
 </body>
 </html>
+
