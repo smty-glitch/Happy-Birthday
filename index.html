@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Bagisha!</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🎉 Happy Birthday, Bagisha! 🎂</h1>
+    <p>Click the candles to blow them out and cut the cake!</p>
+    <div class="cake-container">
+      <div class="candles">
+        <div class="candle" onclick="blowCandle(this)"><div class="flame"></div></div>
+        <div class="candle" onclick="blowCandle(this)"><div class="flame"></div></div>
+        <div class="candle" onclick="blowCandle(this)"><div class="flame"></div></div>
+      </div>
+      <div class="cake">
+        <div class="cake-top"></div>
+        <div class="cake-body"></div>
+      </div>
+      <button class="cut-button" onclick="cutCake()">Cut the Cake 🍰</button>
+    </div>
+    <div class="message hidden">
+      <p>Dear Bagisha, wishing you a day filled with love, joy, and laughter! 💖</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

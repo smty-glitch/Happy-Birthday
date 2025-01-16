@@ -1,0 +1,101 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #ffefd5;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #ff69b4;
+  font-size: 2.5em;
+}
+
+.cake-container {
+  position: relative;
+  margin: 20px 0;
+}
+
+.candles {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.candle {
+  width: 20px;
+  height: 50px;
+  background: #ffcc00;
+  border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+}
+
+.candle .flame {
+  width: 10px;
+  height: 20px;
+  background: orange;
+  border-radius: 50%;
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: flicker 1s infinite alternate;
+}
+
+@keyframes flicker {
+  0% { transform: translateX(-50%) scale(1); }
+  100% { transform: translateX(-50%) scale(1.2); }
+}
+
+.cake {
+  position: relative;
+  margin: 20px auto;
+  width: 200px;
+}
+
+.cake-top {
+  height: 30px;
+  background: pink;
+  border-radius: 50%;
+}
+
+.cake-body {
+  height: 100px;
+  background: chocolate;
+  border-radius: 0 0 10px 10px;
+}
+
+.cut-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background: #ff69b4;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cut-button:hover {
+  background: #ff85c2;
+}
+
+.hidden {
+  display: none;
+}
+
+.message {
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #ff69b4;
+}
